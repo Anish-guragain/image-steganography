@@ -1,0 +1,178 @@
+body {
+  color: #f9f9f9;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: block;
+  color: rgb(29, 209, 185);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(8, 122, 37);
+}
+
+.active {
+  background-color: #4caf50;
+}
+.cont2 {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("images/image1.jfif");
+  background-repeat: no-repeat;
+  background-size: 1900px, 1500px;
+  position: relative;
+}
+.img-cont {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.img1 {
+  margin-right: 15rem;
+  margin-bottom: 10rem;
+  background-color: beige;
+  border-color: red;
+  border-style: solid;
+  border-width: medium;
+}
+
+.img-2 {
+  background-color: beige;
+  margin-bottom: 10rem;
+  border-color: red;
+  border-style: solid;
+  border-width: medium;
+}
+
+img {
+  width: 400px;
+}
+
+.opa {
+  opacity: 0;
+  width: 10px;
+}
+
+.button1::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.button1::before {
+  content: "Select some files";
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.button1:hover::before {
+  border-color: black;
+}
+.button1-input:active {
+  outline: 0;
+}
+
+.button2::before {
+  content: "Hide message into image";
+}
+
+.button2 {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-color: black;
+  color: #e3e3e3;
+  padding: 20px 40px;
+}
+.but1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/image2.jpg");
+  height: 725px;
+  width: 1520px;
+}
+
+.decode {
+  position: absolute;
+  top: 75px;
+  left: 700px;
+}
+
+.ui {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-color: black;
+  color: #e3e3e3;
+  padding: 27px 47px;
+  margin-top: 50px;
+}
+
+.one,
+.two {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  display: block;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: 600;
+  height: 100px;
+  width: 300px;
+  color: var(--text);
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  color: #26a11a;
+  padding: 20px 40px;
+  justify-content: center;
+  text-align: center;
+  margin: 75px;
+}
+
+h5 {
+  color: rgb(48, 212, 26);
+  font-size: medium;
+}
+
+.decoded {
+  color: #fff;
+}

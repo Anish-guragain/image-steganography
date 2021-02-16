@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>image steganography</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-database.js"></script>
+    
+    <script defer src="/__/firebase/8.2.1/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="ac.css">
+    <script src="steganography.min.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="encode.html">Encode</a></li>
+      <li><a href="decode.html">Decode</a></li>
+      
+      <li><a  href="index.html">Image steganography</a></li>
+    </ul>
+    
+ 
+      
+
+  <div class="cont2">
+         <input
+          class="button1"
+          type="file"
+          name="pic"
+          accept="image/*"
+          onchange="readURL(this);"
+        />
+  
+
+
+        <div class="ui ">
+          <input id="text" type="text" />
+        </div>
+
+
+        <button class="button1 button2" onclick="hideText()">
+          
+        </button>
+
+        
+        <div class="img-cont">
+          <div  class="img1">
+            <h5 class="bo1">Source Image</h5>
+
+            <img id="image1" src="" alt="" />
+          </div>
+
+
+          <div class="img-2">
+            <h5 class="bo">Message Encoded Image</h5>
+            <img id="image2" src="" alt="" />
+
+          </div>
+
+        
+      
+
+        
+   
+
+
+
+
+</div>
+      
+    </div>
+
+    <script src="app.js">
+     
+    </script>
+  </body>
+</html>
